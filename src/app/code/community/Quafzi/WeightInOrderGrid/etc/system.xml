@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * This file is part of Quafzi_WeightInOrderGrid for Magento.
+ *
+ * @license MIT
+ * @author Thomas Birke <tbirke@netextreme.de>
+ * @category Quafzi
+ * @package Quafzi_WeightInOrderGrid
+ * @copyright 2015 Thomas Birke
+ */
+-->
+<config>
+    <sections>
+        <adminhtml>
+            <groups>
+                <quafzi_weightinordergrid module="quafzi_weightinordergrid" translate="label">
+                    <label>Weight in order grid</label>
+                    <sort_order>110</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <attribute_code_net_weight translate="label">
+                            <label>Attribute code of net weight</label>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </attribute_code_net_weight>
+                    </fields>
+                </quafzi_weightinordergrid>
+            </groups>
+        </adminhtml>
+    </sections>
+</config>
