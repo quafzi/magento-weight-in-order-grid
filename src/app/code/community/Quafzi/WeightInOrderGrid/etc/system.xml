@@ -12,7 +12,7 @@
 -->
 <config>
     <sections>
-        <adminhtml>
+        <admin>
             <groups>
                 <quafzi_weightinordergrid module="quafzi_weightinordergrid" translate="label">
                     <label>Weight in order grid</label>
@@ -28,9 +28,16 @@
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
                         </attribute_code_net_weight>
+                        <weight_unit translate="label">
+                            <label>Weight unit</label>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </weight_unit>
                     </fields>
                 </quafzi_weightinordergrid>
             </groups>
-        </adminhtml>
+        </admin>
     </sections>
 </config>

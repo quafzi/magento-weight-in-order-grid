@@ -9,4 +9,22 @@
 class Quafzi_WeightInOrderGrid_Helper_Data
     extends Mage_Core_Helper_Data
 {
+    public function getNetWeight(Mage_Sales_Model_Order $order)
+    {
+        $netWeight = 0;
+        foreach ($order->getItemsCollection() as $item) {
+            $netWeight += $item->getProduct()->getNetWeight() * $item->getQtyOrdered();
+        }
+        return $netWeight;
+    }
+
+    public function getWeightUnit()
+    {
+        return Mage::getStoreConfig('admin/quafzi_weightinordergrid/weight_unit');
+    }
+
+    public function getNetWeightAttributeCode()
+    {
+        return Mage::getStoreConfig('admin/quafzi_weightinordergrid/attribute_code_net_weight');
+    }
 }

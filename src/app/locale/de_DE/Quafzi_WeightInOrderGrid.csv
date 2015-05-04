@@ -1,3 +1,5 @@
-"Weight and Net Weight","Brutto- und Nettogewicht"
+Weight,Gewicht
 "Weight in order grid","Gewichtsanzeige in Bestellliste"
 "Attribute code of net weight","Attributcode des Nettogewichts"
+gross,brutto
+net,netto

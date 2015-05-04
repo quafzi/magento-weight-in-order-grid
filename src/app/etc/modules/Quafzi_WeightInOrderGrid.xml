@@ -4,7 +4,6 @@
         <Quafzi_WeightInOrderGrid>
             <active>true</active>
             <codePool>community</codePool>
-            <depends>Mage_Adminhtml</depends>
         </Quafzi_WeightInOrderGrid>
     </modules>
 </config>
