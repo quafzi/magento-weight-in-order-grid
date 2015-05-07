@@ -17,7 +17,14 @@ class Quafzi_WeightInOrderGrid_Block_Renderer_Weights
 
         $unit = $helper->getWeightUnit();
         $netWeight = $helper->getNetWeight($order);
-        return '<strong>' . $weightAttributeTitle . ':</strong> ' . $order->getWeight() . $unit
-            . '<br /><strong>' . $netWeightAttributeTitle . ':</strong> ' . $netWeight . $unit;
+        return <<<HTML
+            <div style="width:100%">
+                <strong>$weightAttributeTitle</strong>
+                <div class='a-right'>{$order->getWeight()}$unit</div>
+
+                <strong>$netWeightAttributeTitle</strong>
+                <div class='a-right'>$netWeight$unit</div>
+            </div>
+HTML;
     }
 }
