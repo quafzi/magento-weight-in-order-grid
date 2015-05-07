@@ -13,7 +13,8 @@ class Quafzi_WeightInOrderGrid_Helper_Data
     {
         $netWeight = 0;
         foreach ($order->getItemsCollection() as $item) {
-            $netWeight += $item->getProduct()->getNetWeight() * $item->getQtyOrdered();
+            $productNetWeight = $item->getProduct()->getData($this->getNetWeightAttributeCode());
+            $netWeight += $productNetWeight * $item->getQtyOrdered();
         }
         return $netWeight;
     }
